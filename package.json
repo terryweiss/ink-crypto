@@ -1,0 +1,32 @@
+{
+  "name": "ink-crypto",
+  "version": "0.1.0-5",
+  "description": "*ink-crypto* crypto for web and server",
+  "devDependencies": {
+
+  },
+  "dependencies": {
+    "lodash": "~1.2.1"
+  },
+  "license": "MIT",
+  "main": "./crypto.js",
+  "keywords": [
+
+  ],
+  "author": {
+    "name": "Terry Weiss",
+    "email": "me@terryweiss.net"
+  },
+  "bugs": {
+    "url": "https://github.com/terryweiss/ink-crypto/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/terryweiss/ink-crypto.git"
+  },
+  "engines": [
+    "node",
+    "rhino",
+    "web"
+  ]
+}

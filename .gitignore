@@ -1,0 +1,8 @@
+node_modules*
+components*
+*.map
+.idea*
+dox*
+npm-debug.log
+
+
