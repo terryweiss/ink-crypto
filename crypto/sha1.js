@@ -5,8 +5,8 @@
  * See http://pajhome.org.uk/crypt/md5 for details.
  */
 /** @module ink/crypto/sha1 */
-var sys = require( "../ink" );
-var ParameterError = sys.ParameterError;
+var sys = require( "lodash" );
+
 /*
  * Configurable variables. You may need to tweak these to be compatible with the server-side, but the defaults work in
  * most cases.
@@ -120,9 +120,9 @@ exports.sha1 = {
 	 * @function
 	 */
 	fullHash : function( plaintext, salt, challenge ) {
-		if ( sys.isEmpty( plaintext ) ) { throw new ParameterError( "plaintext required" ); }
-		if ( sys.isEmpty( salt ) ) { throw new ParameterError( "salt required" ); }
-		if ( sys.isEmpty( challenge ) ) { throw new ParameterError( "challenge required" ); }
+		if ( sys.isEmpty( plaintext ) ) { throw new Error( "plaintext required" ); }
+		if ( sys.isEmpty( salt ) ) { throw new Error( "salt required" ); }
+		if ( sys.isEmpty( challenge ) ) { throw new Error( "challenge required" ); }
 		return hex_hmac_sha1( hex_hmac_sha1( plaintext, salt ), challenge );
 
 	},
@@ -137,8 +137,8 @@ exports.sha1 = {
 	 * @function
 	 */
 	saltHash : function( plaintext, salt ) {
-		if ( sys.isEmpty( plaintext ) ) { throw new ParameterError( "plaintext required" ); }
-		if ( sys.isEmpty( salt ) ) { throw new ParameterError( "required" ); }
+		if ( sys.isEmpty( plaintext ) ) { throw new Error( "plaintext required" ); }
+		if ( sys.isEmpty( salt ) ) { throw new Error( "required" ); }
 		return hex_hmac_sha1( plaintext, salt );
 
 	},
