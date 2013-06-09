@@ -1,6 +1,6 @@
 {
   "name": "ink-crypto",
-  "version": "0.1.0-2",
+  "version": "0.1.0-3",
   "description": "*ink-crypto* crypto for web and server",
   "devDependencies": {},
   "dependencies": {
